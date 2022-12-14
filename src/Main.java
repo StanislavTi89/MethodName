@@ -12,5 +12,9 @@ public class Main {
             return year % 4 == 0 && year % 100 !=0 || year % 400 ==0;
         }
 
-
+        public static void printLeapNotLapYear(int year) {
+            if (isLeapYear(year)){
+                System.out.println(year + " високосный год");
+            }
+        }
 }
