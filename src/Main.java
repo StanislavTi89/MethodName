@@ -15,5 +15,6 @@ public class Main {
                 System.out.println(year + " високосный год");
                 return;
             }
+            System.out.println(year + " не високосный год");
         }
 }
