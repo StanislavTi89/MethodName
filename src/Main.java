@@ -1,13 +1,14 @@
 import java.time.LocalDate;
 
 public class Main {
+    private final static int CURRENTTEAR = LocalDate.now().getYear();
 
     public static void main(String[] args) {
         System.out.println("Методы!");
         //Задание 1
         System.out.println("Задание 1");
         printLeapNotLapYear(2020);
-        printVersionOS()
+        printVersionOS(2015,0);
     }
 
         public static boolean isLeapYear (int year){
@@ -23,7 +24,7 @@ public class Main {
         }
 
         public static boolean isNowYear(int year){
-        return year == ;
+        return year == CURRENTTEAR;
         }
         public static String getVersionOS (int versionOS){
         if (versionOS == 0){
@@ -34,7 +35,9 @@ public class Main {
 
         public static void printVersionOS(int year, int versionOS) {
         if (isNowYear(year)){
-            System.out.println();
+            System.out.println("Установите полную версию приложения для вашего " + getVersionOS(versionOS));
+        } else {
+            System.out.println("Установите облегченную версию приложения для вашего " + getVersionOS(versionOS));
         }
         }
 }
