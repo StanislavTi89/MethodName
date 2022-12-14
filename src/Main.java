@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Методы!");
+        printLeapNotLapYear(2020);
     }
 
 
@@ -15,6 +16,8 @@ public class Main {
         public static void printLeapNotLapYear(int year) {
             if (isLeapYear(year)){
                 System.out.println(year + " високосный год");
+                return;
             }
+
         }
 }
