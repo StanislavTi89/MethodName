@@ -1,13 +1,10 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Методы!");
-        printLeapNotLapYear(2020);
-    }
-
-
-
         //Задание 1
         System.out.println("Задание 1");
+        printLeapNotLapYear(2020);
+    }
 
         public static boolean isLeapYear (int year){
             return year % 4 == 0 && year % 100 !=0 || year % 400 ==0;
@@ -18,6 +15,5 @@ public class Main {
                 System.out.println(year + " високосный год");
                 return;
             }
-
         }
 }
