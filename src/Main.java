@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Задание 1");
         printLeapNotLapYear(2004);
         clientDeviceYear(2015,1);
+        printDistanceTimeDelivery(134);
     }
 
         public static boolean isLeapYear (int year){
@@ -41,5 +42,15 @@ public class Main {
         } else {
             System.out.println("Установите облегченную версию приложения для вашего " + getVersionOS(versionOS) + " по ссылке");
         }
+        }
+
+        public static void printDistanceTimeDelivery(int deliveryDistance){
+        //Задание 3
+            System.out.println("Задание 3");
+        if (deliveryDistance > 0 && deliveryDistance < 123){
+            System.out.println("Потребуется дней: " + ((deliveryDistance + 19)/40 + 1));
+            return;
+        }
+            System.out.println("Мы не осуществляем доставку за пределами данного региона");
         }
 }
