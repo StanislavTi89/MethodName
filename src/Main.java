@@ -7,8 +7,8 @@ public class Main {
         System.out.println("Методы!");
         //Задание 1
         System.out.println("Задание 1");
-        printLeapNotLapYear(2020);
-        printVersionOS(2015,0);
+        printLeapNotLapYear(2004);
+        clientDeviceYear(2015,1);
     }
 
         public static boolean isLeapYear (int year){
@@ -33,7 +33,7 @@ public class Main {
         return "Android";
         }
 
-        public static void printVersionOS(int year, int versionOS) {
+        public static void clientDeviceYear(int year, int versionOS) {
         if (isNowYear(year)){
             System.out.println("Установите полную версию приложения для вашего " + getVersionOS(versionOS) + " по ссылке");
         } else {
