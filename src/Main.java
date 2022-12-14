@@ -35,9 +35,9 @@ public class Main {
 
         public static void printVersionOS(int year, int versionOS) {
         if (isNowYear(year)){
-            System.out.println("Установите полную версию приложения для вашего " + getVersionOS(versionOS));
+            System.out.println("Установите полную версию приложения для вашего " + getVersionOS(versionOS) + " по ссылке");
         } else {
-            System.out.println("Установите облегченную версию приложения для вашего " + getVersionOS(versionOS));
+            System.out.println("Установите облегченную версию приложения для вашего " + getVersionOS(versionOS) + " по ссылке");
         }
         }
 }
