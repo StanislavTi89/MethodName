@@ -24,6 +24,8 @@ public class Main {
         }
 
         public static boolean isNowYear(int year){
+        //Задание 2
+            System.out.println("Задание 2");
         return year == CURRENTTEAR;
         }
         public static String getVersionOS (int versionOS){
